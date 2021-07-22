@@ -57,3 +57,17 @@ let reverseString = splitString.reverse();
 console.log(reverseString);
 let joinReverseString = reverseString.join('');
 console.log(joinReverseString)
+
+// Second method
+function reverseYourWord(speech) {
+    let reverseSpeech = '';
+    for (let i = 0; i < speech.length; i++) {
+        const element = speech[i];
+        console.log(element)
+        reverseSpeech = element + reverseSpeech;
+    }
+    return reverseSpeech;
+}
+let speech = "I love my country.";
+let yourSpeech = reverseYourWord(speech);
+console.log(yourSpeech);
