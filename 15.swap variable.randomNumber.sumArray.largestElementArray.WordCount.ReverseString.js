@@ -39,7 +39,8 @@ for (let i = 0; i <5; i++) {
         dice6++;
     }
 }
-console.log(dice6)
+console.log(dice6);
+
 // Largest Element Of an Array
 let myArray = [12,34,92,34];
 let largestFromMyArray = myArray[0];
