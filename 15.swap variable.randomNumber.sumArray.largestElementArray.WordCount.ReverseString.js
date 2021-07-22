@@ -24,6 +24,7 @@ q = q-w;
 console.log("q =",q,"& w =",w);
 
 // Math operator
+
 console.log(Math.round(3.4));
 console.log(Math.round(3.5));
 console.log(Math.floor(3.5));
