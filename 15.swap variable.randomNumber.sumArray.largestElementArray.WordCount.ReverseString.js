@@ -29,6 +29,17 @@ console.log(Math.round(3.5));
 console.log(Math.floor(3.5));
 console.log(Math.ceil(3.5));
 console.log(Math.random());
+let dice6 = 0;
+for (let i = 0; i <5; i++) {
+    const element = i;
+    console.log("10");
+    let roll = Math.round(Math.random()*6);
+    console.log(roll);
+    if (roll == 6) {
+        dice6++;
+    }
+}
+console.log(dice6)
 // Largest Element Of an Array
 let myArray = [12,34,92,34];
 let largestFromMyArray = myArray[0];
