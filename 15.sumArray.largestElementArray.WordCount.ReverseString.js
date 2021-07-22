@@ -40,14 +40,15 @@ let splitArray = myString.split(' ')
 console.log(splitArray.length);
 
 //second method
-let wordCount = 1;
+let wordCount = 0;
 for (let i = 0; i < myString.length; i++) {
     const element = myString[i];
     console.log(element);
-    if (element === ' ') {
+    if (element === ' ' && myString[i-1] !== ' ') { // myString[i-1] !== ' ' . this condition remove the problem when there will be more than one white space
         wordCount = wordCount + 1;
     }
 }
+wordCount++;
 console.log(wordCount)
 // Reverse a string
 let splitString = myString.split('');
