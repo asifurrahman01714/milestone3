@@ -22,6 +22,9 @@ q = q+w;
 w = q-w;
 q = q-w;
 console.log("q =",q,"& w =",w);
+
+// Math operator
+
 // Largest Element Of an Array
 let myArray = [12,34,92,34];
 let largestFromMyArray = myArray[0];
