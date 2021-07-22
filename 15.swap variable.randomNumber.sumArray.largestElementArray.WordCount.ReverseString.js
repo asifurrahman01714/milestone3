@@ -1,5 +1,9 @@
 // Swap Variable
-
+let a =7;
+let b = 5;
+console.log("a =",a,"& b =",b);
+[a,b]= [b,a];
+console.log("a =",a,"& b =",b);
 // Largest Element Of an Array
 let myArray = [12,34,92,34];
 let largestFromMyArray = myArray[0];
