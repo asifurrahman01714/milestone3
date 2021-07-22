@@ -17,6 +17,7 @@ function factRecursive(n) {
     if (n == 1) {
         return 1;
     } else {
+        console.log(n, n-1)
         return n * factRecursive(n - 1);
     }
 }
