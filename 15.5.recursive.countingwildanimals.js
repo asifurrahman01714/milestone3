@@ -23,3 +23,29 @@ function factRecursive(n) {
 }
 let factorialWithRecursive = factRecursive(5);
 console.log(factorialWithRecursive);
+
+// Counting wild animals in a jungle according to depth;
+// for 10km, wild animals are 50
+// for 20km, wild animals are 100
+// for 20km<, wild animals are 300
+function wildAnimalCount(depth) {
+    let animals = 0;
+    if (depth <=10) {
+        animals = depth * 50;
+    } else if(depth <= 20){
+        let firstPart = 10 * 50;
+        let remainingPart = depth - 10;
+        let secondPart = remainingPart * 100;
+        animals = firstPart + secondPart;
+    } else{
+        let firstPart = 10 * 50;
+        let secondPart = 10 * 100;
+        let remainingPart = depth - 20;
+        let thirdPart = remainingPart * 300;
+        animals = firstPart + secondPart + thirdPart;
+    }
+    return animals;
+}
+
+let allAnimals = wildAnimalCount(21);
+console.log(allAnimals);
