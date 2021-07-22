@@ -4,6 +4,15 @@ let b = 5;
 console.log("a =",a,"& b =",b);
 [a,b]= [b,a];
 console.log("a =",a,"& b =",b);
+
+//second method
+let x= 4;
+let y=5;
+console.log("x =",x,"& y =",y);
+let temporary = x;
+x = y;
+y = temporary;
+console.log("x =",x,"& y =",y);
 // Largest Element Of an Array
 let myArray = [12,34,92,34];
 let largestFromMyArray = myArray[0];
