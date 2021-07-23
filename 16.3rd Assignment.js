@@ -13,3 +13,26 @@ function budgetCalculator(watch, phone, laptop) {
 }
 let myBudget = budgetCalculator(1, 1, 1);
 console.log(myBudget);
+
+// Hotel Cost
+// 1-10 Days = 100tk ; 11-20 Days = 80tk ; 21<= 50tk
+function HotelCost(Days) {
+    let totalCost = 0;
+    if (Days < 11) {
+        totalCost = Days * 100;
+    } else if(Days < 20) {  
+        let firstPart = 10 * 100;
+        let remainingPart = Days - 10;
+        let secondPart = remainingPart * 80;
+        totalCost = firstPart + secondPart;
+    } else{
+        let firstPart = 10 * 100;
+        let secondPart = 10 * 80;
+        let remainingPart = Days - 20;
+        let thirdPart = remainingPart * 50;
+        totalCost = firstPart + secondPart + thirdPart;
+    }
+    return totalCost;
+}
+let MyHotelCost = HotelCost(21);
+console.log(MyHotelCost);
