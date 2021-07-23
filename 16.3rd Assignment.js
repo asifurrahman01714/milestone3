@@ -36,3 +36,19 @@ function HotelCost(Days) {
 }
 let MyHotelCost = HotelCost(21);
 console.log(MyHotelCost);
+
+// MegaFriend
+function MegaFriend(Array) {
+    let biggestName = Array[0];
+    console.log(biggestName);
+    for (let i = 0; i < Array.length; i++) {
+        const element = Array[i];
+        console.log(element);
+        if (biggestName.length < element.length) {
+            biggestName = element;
+        }
+    }
+    return biggestName;
+}
+let friendsArray = MegaFriend(['Asif', 'Sakibur', 'Asif Ur Rahman']);
+console.log(friendsArray);
