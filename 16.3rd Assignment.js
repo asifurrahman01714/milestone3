@@ -1,9 +1,14 @@
 // Km to m
 function kmToMeter(km) {
+    if (km<0) {
+        console.log(km)
+        km = Math.abs(km);
+        console.log(km)
+    }
     let meters = km * 1000;
     return meters;
 }
-let meter = kmToMeter(4);
+let meter = kmToMeter(-4);
 console.log(meter)
 
 // Budget Calculator
